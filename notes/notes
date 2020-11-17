@@ -1,0 +1,28 @@
+- Identifying Dynamic Programming Problem
+
+    If the problem asks for, 
+    1.Choice (choice of selecting or rejecting item) - choice means there should be recursion
+        > There should be two function call in recursion (DP won't apply for one fun call in recursion)
+
+    2.Optimal(minimum, maximum, largest)
+
+- How to approach for any problem
+    Write Recursive Solution,After that  
+               /    \
+              /      \
+             /        \
+       Memoize  Top Down approach
+
+- Remember : In DP, almost all problems is one of the variation of their parent problem.
+
+- List of Parent Problems :
+    > 0-1 Knapsack (6 variations)
+    > Unbounded Knapsack (5 variations)
+    > Fibonacci (7 variations)
+    > LCS (15 variations)
+    > LIS (10 variations)
+    > Kadane Algorithm (6 variations)
+    > MCM (7 variations)
+    > DP on Trees (4 variations)
+    > DP on Grid (14 variations)
+    > Others (5 variations)
