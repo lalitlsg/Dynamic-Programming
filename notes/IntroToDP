@@ -10,11 +10,9 @@
     2.Optimal(minimum, maximum, largest, greatest)
 
 - How to approach for any problem
-    Write Recursive Solution,After that  
-               /    \
-              /      \
-             /        \
-       Memoize  Top Down approach
+    Write Recursive Solution,After that        
+       > Memoize  
+       > Top Down approach
 
 - Remember : Parent Problem of DP is Recursion.
 - Remember : In DP, almost all problems is one of the variation of their parent problem.

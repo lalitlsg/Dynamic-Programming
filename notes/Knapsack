@@ -66,6 +66,41 @@ Fill the bag so that your profit will be maximum ?
         }
     }
 
+   
+    //Memoization matrix
+    t = [n+1][W+1]
+    memset(t,-1,sizeof(t))
 
+    //constraints
+    n <= 2
+    W <= 3
 
+    //Recursion with Memoization
+    ----------------------------
+
+    //declaring Memoization matrix
+      let n = 2;
+      let W = 3;
+      let rows = n + 2;
+      let cols = W + 2;
+
+      const t = new Array(rows);
+      for (let i = 0; i < rows; i++) {
+        t[i] = new Array(cols).fill(-1);
+      }
+
+      function knapsack(w, v, W, n) {
+          if(n === 0 || W === 0) {
+              return 0
+          }
+          if(t[n][W] !== -1) {
+              return t[n][W]
+          }
+          if(w[n-1] <= W) {
+              return t[n][w] = max(v[n-1] + knapsack(w, v, W - w[n-1], n-1), knapsack(w, v, W, n-1))
+          }
+          else if(w[n-1] > W) {
+              return t[n][W] = knapsack(w, v, W, n-1)
+          }
+      }
 
